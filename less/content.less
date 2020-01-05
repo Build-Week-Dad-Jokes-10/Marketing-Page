@@ -1,0 +1,102 @@
+@keyframes bounce {
+  0%,
+  100%,
+  20%,
+  50%,
+  80% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+
+.joke-one {
+  display: flex;
+  justify-content: space-evenly;
+  .image-one {
+    display: flex;
+    justify-content: center;
+    width: 30%;
+    margin: 20px;
+    img {
+      width: 100%;
+      border-radius: 5px;
+      border: 1px solid @secondary-background;
+    }
+  }
+  .content-one {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: @secondary-background;
+    width: 25%;
+    margin: 20px;
+    font-size: 2rem;
+  }
+}
+
+.bottom-half {
+  display: flex;
+  justify-content: center;
+  background: @secondary-background;
+
+  h1 {
+    color: @secondary-color;
+    font-weight: bold;
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .cards-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    .card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border: 1px solid @theme;
+      border-radius: 5px;
+      padding: 10px;
+      margin: 50px;
+      transition: 0.8s ease-in;
+      h3 {
+        display: none;
+      }
+    }
+
+    .card-one,
+    .card-two,
+    .card-three {
+      -webkit-animation-duration: 2s;
+      animation-duration: 2s;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both;
+      -webkit-animation-timing-function: ease-in-out;
+      animation-timing-function: ease-in-out;
+      animation-iteration-count: infinite;
+      -webkit-animation-iteration-count: infinite;
+      &:hover {
+        animation-name: bounce;
+        h3 {
+          display: block;
+          color: @secondary-color;
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+}

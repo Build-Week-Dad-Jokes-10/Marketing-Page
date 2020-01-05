@@ -1,0 +1,42 @@
+.top-half {
+  background-color: @main-background;
+}
+
+.nav-container {
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+a {
+  color: @theme;
+  font-size: 2rem;
+  margin: 20px;
+  text-decoration: none;
+  &:hover {
+    color: @primary-color;
+  }
+}
+
+.header {
+  width: 100%;
+
+  .header-nav {
+    display: flex;
+    justify-content: center;
+
+    a {
+      font-size: 2.5rem;
+    }
+  }
+
+  .header-title {
+    text-align: center;
+    margin: auto;
+    font-size: 3rem;
+    color: @primary-color;
+  }
+}
