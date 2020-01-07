@@ -190,3 +190,19 @@ footer h2 {
   transition: all 0.4s ease;
   color: #ebc700;
 }
+@media (max-width: 900px) {
+  .header-title h1 {
+    font-size: 3rem;
+  }
+  .joke-one {
+    align-content: center;
+  }
+  .joke-one .image-one {
+    max-width: 80%;
+    min-width: 200px;
+    align-items: center;
+  }
+  .joke-one .content-one {
+    width: 80%;
+  }
+}
