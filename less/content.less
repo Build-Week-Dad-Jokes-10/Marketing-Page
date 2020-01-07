@@ -95,7 +95,6 @@
       align-items: center;
       flex-direction: column;
       cursor: pointer;
-      transition: all 0.3s ease;
     }
   }
 
@@ -118,29 +117,11 @@
     &:hover {
       animation-name: bounce;
       h3 {
-        transition: all 0.5s ease;
+
         display: block;
         color: @secondary-color;
         font-size: 2rem;
       }
     }
   }
-}
-
-footer {
-  display: flex;
-  justify-content: space-between;
-  background-color: @theme;
-  color: @secondary-color;
-  h2 {
-    font-size: 2rem;
-    margin-left: 20px;
-  }
-}
-
-.fab{
-  color: @secondary-color;
-  font-size: 25px;
-  padding: 10px;
-  margin-right: 20px;
 }

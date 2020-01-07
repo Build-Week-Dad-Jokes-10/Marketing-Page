@@ -1,5 +1,6 @@
 html {
   font-size: 62.5%;
+  font-family: 'Montserrat', sans-serif;
 }
 .top-half {
   background-color: #2670c5;
@@ -22,6 +23,7 @@ a {
   text-decoration: none;
 }
 a:hover {
+  transition: 0.4s ease;
   color: #ebc700;
 }
 .header {
@@ -125,13 +127,13 @@ a:hover {
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.24);
   border: 2px solid rgba(7, 7, 7, 0.12);
   font-size: 16px;
+  transition: all 0.3s ease;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   cursor: pointer;
-  transition: all 0.3s ease;
 }
 .bottom-half .card-one,
 .bottom-half .card-two,
@@ -158,10 +160,14 @@ a:hover {
 .bottom-half .card-one:hover h3,
 .bottom-half .card-two:hover h3,
 .bottom-half .card-three:hover h3 {
-  transition: all 0.5s ease;
   display: block;
   color: #e31d4c;
   font-size: 2rem;
+}
+.border {
+  border-radius: 10px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.24);
+  border: 2px solid rgba(7, 7, 7, 0.12);
 }
 footer {
   display: flex;
@@ -179,8 +185,8 @@ footer h2 {
   padding: 10px;
   margin-right: 20px;
 }
-.border {
-  border-radius: 10px;
-  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.24);
-  border: 2px solid rgba(7, 7, 7, 0.12);
+.fab:hover {
+  cursor: pointer;
+  transition: all 0.4s ease;
+  color: #ebc700;
 }
