@@ -1,10 +1,6 @@
 html {
   font-size: 62.5%;
 }
-body {
-  margin-right: 10%;
-  margin-left: 10%;
-}
 .top-half {
   background-color: #2670c5;
 }
@@ -14,6 +10,10 @@ body {
 nav {
   display: flex;
   justify-content: flex-end;
+  background-color: #380a15;
+}
+nav a {
+  color: #e31d4c;
 }
 a {
   color: #380a15;
@@ -64,17 +64,22 @@ a:hover {
 .joke-one {
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 .joke-one .image-one {
   display: flex;
   justify-content: center;
-  width: 30%;
+  max-width: 30%;
   margin: 20px;
+  border: 1px solid #edd5dc;
+  border-radius: 10px;
+  transition: all 0.3s ease;
 }
 .joke-one .image-one img {
   width: 100%;
-  border-radius: 5px;
-  border: 1px solid #edd5dc;
+  border-radius: 10px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.24);
+  border: 2px solid rgba(7, 7, 7, 0.12);
 }
 .joke-one .content-one {
   display: flex;
@@ -84,6 +89,10 @@ a:hover {
   width: 25%;
   margin: 20px;
   font-size: 2rem;
+  transition: all 0.3s ease;
+  border-radius: 10px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.24);
+  border: 2px solid rgba(7, 7, 7, 0.12);
 }
 .bottom-half {
   display: flex;
@@ -101,24 +110,32 @@ a:hover {
 .bottom-half .cards-container {
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
 }
 .bottom-half .cards-container .card {
+  width: 100%;
+  max-width: 300px;
+  min-width: 200px;
+  height: 250px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.24);
+  border: 2px solid rgba(7, 7, 7, 0.12);
+  font-size: 16px;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
-  border: 1px solid #380a15;
-  border-radius: 5px;
-  padding: 10px;
-  margin: 50px;
-  transition: 0.8s ease-in;
+  flex-direction: column;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
-.bottom-half .cards-container .card h3 {
-  display: none;
-}
-.bottom-half .cards-container .card-one,
-.bottom-half .cards-container .card-two,
-.bottom-half .cards-container .card-three {
+.bottom-half .card-one,
+.bottom-half .card-two,
+.bottom-half .card-three {
   -webkit-animation-duration: 2s;
   animation-duration: 2s;
   -webkit-animation-fill-mode: both;
@@ -128,15 +145,42 @@ a:hover {
   animation-iteration-count: infinite;
   -webkit-animation-iteration-count: infinite;
 }
-.bottom-half .cards-container .card-one:hover,
-.bottom-half .cards-container .card-two:hover,
-.bottom-half .cards-container .card-three:hover {
+.bottom-half .card-one h3,
+.bottom-half .card-two h3,
+.bottom-half .card-three h3 {
+  display: none;
+}
+.bottom-half .card-one:hover,
+.bottom-half .card-two:hover,
+.bottom-half .card-three:hover {
   animation-name: bounce;
 }
-.bottom-half .cards-container .card-one:hover h3,
-.bottom-half .cards-container .card-two:hover h3,
-.bottom-half .cards-container .card-three:hover h3 {
+.bottom-half .card-one:hover h3,
+.bottom-half .card-two:hover h3,
+.bottom-half .card-three:hover h3 {
+  transition: all 0.5s ease;
   display: block;
   color: #e31d4c;
   font-size: 2rem;
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #380a15;
+  color: #e31d4c;
+}
+footer h2 {
+  font-size: 2rem;
+  margin-left: 20px;
+}
+.fab {
+  color: #e31d4c;
+  font-size: 25px;
+  padding: 10px;
+  margin-right: 20px;
+}
+.border {
+  border-radius: 10px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.24);
+  border: 2px solid rgba(7, 7, 7, 0.12);
 }

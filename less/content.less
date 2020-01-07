@@ -23,15 +23,19 @@
 .joke-one {
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
   .image-one {
     display: flex;
     justify-content: center;
-    width: 30%;
+    max-width: 30%;
+    
     margin: 20px;
+    border: 1px solid @secondary-background;
+    border-radius: 10px;
+    transition: all 0.3s ease;
     img {
       width: 100%;
-      border-radius: 5px;
-      border: 1px solid @secondary-background;
+      .border;
     }
   }
   .content-one {
@@ -40,8 +44,15 @@
     padding: 20px;
     background-color: @secondary-background;
     width: 25%;
+   
     margin: 20px;
     font-size: 2rem;
+    transition: all 0.3s ease;
+    .border;
+
+    
+    
+
   }
 }
 
@@ -63,40 +74,73 @@
   .cards-container {
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
+
     .card {
+      width: 100%;
+      max-width: 300px;
+      min-width: 200px;
+      height: 250px;
+      margin-top: 50px;
+      margin-bottom: 50px;
+      padding: 20px;
+
+      .border;
+      font-size: 16px;
+      transition: all 0.3s ease;
       display: flex;
-      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center;
       align-items: center;
-      border: 1px solid @theme;
-      border-radius: 5px;
-      padding: 10px;
-      margin: 50px;
-      transition: 0.8s ease-in;
-      h3 {
-        display: none;
-      }
+      flex-direction: column;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+  }
+
+  .card-one,
+  .card-two,
+  .card-three {
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+
+    h3 {
+      display: none;
     }
 
-    .card-one,
-    .card-two,
-    .card-three {
-      -webkit-animation-duration: 2s;
-      animation-duration: 2s;
-      -webkit-animation-fill-mode: both;
-      animation-fill-mode: both;
-      -webkit-animation-timing-function: ease-in-out;
-      animation-timing-function: ease-in-out;
-      animation-iteration-count: infinite;
-      -webkit-animation-iteration-count: infinite;
-      &:hover {
-        animation-name: bounce;
-        h3 {
-          display: block;
-          color: @secondary-color;
-          font-size: 2rem;
-        }
+    &:hover {
+      animation-name: bounce;
+      h3 {
+        transition: all 0.5s ease;
+        display: block;
+        color: @secondary-color;
+        font-size: 2rem;
       }
     }
   }
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: @theme;
+  color: @secondary-color;
+  h2 {
+    font-size: 2rem;
+    margin-left: 20px;
+  }
+}
+
+.fab{
+  color: @secondary-color;
+  font-size: 25px;
+  padding: 10px;
+  margin-right: 20px;
 }
