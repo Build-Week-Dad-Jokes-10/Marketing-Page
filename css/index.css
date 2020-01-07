@@ -132,8 +132,12 @@ a:hover {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  align-content: center;
   flex-direction: column;
   cursor: pointer;
+}
+.bottom-half .cards-container .card h2 {
+  max-width: 212px;
 }
 .bottom-half .card-one,
 .bottom-half .card-two,
