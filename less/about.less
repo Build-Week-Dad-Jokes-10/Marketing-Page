@@ -1,0 +1,49 @@
+.dad-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.dad-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    
+    .border;
+    background-color: @secondary-background;
+    padding: 15px;
+    max-height: 500px;
+    max-width: 400px;
+
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+
+    &:hover {
+        animation-name: bounce;
+    }
+
+    .dad-dev-img {
+        max-width: 500px;
+        
+        img {
+            width: 100%;
+            height: 300px;
+            .border;
+        }
+    }
+
+    .dad-dev-bio {
+        max-width: 500px;
+
+        p {
+            font-size: 1.5rem;
+        }
+    }
+}
