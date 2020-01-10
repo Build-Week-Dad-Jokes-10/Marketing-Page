@@ -86,9 +86,10 @@ a:hover {
 .joke-one .content-one {
   display: flex;
   align-items: center;
+  justify-content: center;
   padding: 20px;
   background-color: #edd5dc;
-  width: 25%;
+  width: 35%;
   margin: 20px;
   font-size: 2rem;
   transition: all 0.3s ease;
@@ -202,12 +203,31 @@ footer h2 {
     align-content: center;
   }
   .joke-one .image-one {
-    max-width: 80%;
+    max-width: 90%;
     min-width: 200px;
     align-items: center;
   }
   .joke-one .content-one {
-    width: 80%;
+    width: 90%;
+  }
+}
+@media (max-width: 500px) {
+  .header .header-nav a {
+    font-size: 1.9rem;
+  }
+  .header .content-one {
+    max-width: 90%;
+    min-width: 250px;
+  }
+  .header .content-one p {
+    max-height: 400px;
+    max-width: 250px;
+  }
+  .header footer h2 {
+    font-size: 1rem;
+  }
+  .fab {
+    margin-right: 10px;
   }
 }
 .dad-cards {

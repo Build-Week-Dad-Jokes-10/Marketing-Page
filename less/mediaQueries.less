@@ -11,7 +11,7 @@
         align-content: center;
 
         .image-one {
-            max-width: 80%;
+            max-width: 90%;
             min-width: 200px;
             align-items: center;
 
@@ -19,9 +19,41 @@
         }
         .content-one {
            
-           width: 80%;
+           width: 90%;
            
         }
     }
 
 }
+
+@media (max-width: 500px) {
+    
+    .header {
+        .header-nav {
+            a {
+                font-size: 1.9rem;
+            }
+        }
+
+        .content-one {
+            max-width: 90%;
+            min-width: 250px;
+            p {
+                max-height: 400px;
+                max-width: 250px;
+            }
+        }
+
+        footer {
+            h2 {
+                font-size: 1rem;
+            }
+
+            
+        }
+    }
+
+    .fab {
+        margin-right: 10px;
+     }
+} 
